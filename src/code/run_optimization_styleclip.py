@@ -142,6 +142,6 @@ if __name__ == "__main__":
 
     result_image = main(args)
 
-    torchvision.utils.save_image(result_image.detach().cpu(), os.path.join(args.results_dir, "final_result.jpg"), normalize=True, scale_each=True, range=(-1, 1))
+    torchvision.utils.save_image(result_image.detach().cpu(), os.path.join(args.results_dir, "final_result.jpg"))
 
 
